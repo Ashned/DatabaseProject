@@ -2,7 +2,9 @@ import string
 
 
 def QueryToWords(query1):
+    #raw qyery list
     l2 = []
+    # raw query list for sotring query with [ ]
     l3 = []
 
     def SortString(queryyy):
@@ -54,9 +56,11 @@ def QueryToWords(query1):
             l2.append(item)
 
             # print(ch, '(%d)' % i)
-
+    #raw query list with only [  ]
     l4 = []
+    #raw query list for removing [   ]
     l5 = []
+    #final query list to store result
     l6 = []
 
     def finalsort():
@@ -140,7 +144,13 @@ def QueryToWords(query1):
     # print(l4)
     for item in l4:
         repeatsort(item)
-    print(l6)
+    # print(l6)
+    # print("################################################################")
+    # print(l2)
+    # print(l3)
+    # print(l4)
+    # print(l5)
+    # print(l6)
 
 
 QueryToWords("a[2,3].h.(b+c+d.(e+f+g+t)+u).a[2,3].(b+c+d+e.(f+g))).y.(i+9)");

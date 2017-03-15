@@ -16,8 +16,9 @@ def showGraphER():
         T = (e[0], e[1], RandomLetter())
         NER.append(T)
     print(NER)
+    return NER
     nx.draw(ER, pos, with_labels=False, node_size=30)
-    plt.show()
+    # plt.show()
 
 
 # method to generate Power Law Graphs

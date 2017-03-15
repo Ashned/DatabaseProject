@@ -2,7 +2,7 @@ import  DataSet
 import QueryConverter
 
 # listData = DataSet.showGraphER()
-listData=[(1,2,"a"),(2,3,"b"),(2,6,"g"),(3,5,"c"),(1,4,"f"),(3,7,"c")]
+listData=[(1,2,"a"),(2,3,"b"),(2,6,"g"),(3,5,"c"),(1,4,"f"),(3,7,"c"),(4,8,"b"),(8,9,"c")]
 listVertex =[]
 result =[]
 def addVertex():
@@ -21,7 +21,6 @@ def addVertex():
                 break
         if d2 == True:
             listVertex.append(Vertex(d[1]))
-    print(listVertex)
 class Vertex(object):
     def __init__(self,name):
         self.name = name
@@ -61,7 +60,7 @@ class Vertex(object):
                     if ver.name==e[0]:
                         ver.chooseBF(v, quary[2:])
 addVertex()
-q="ab-bg"
+q="bc"
 for v in listVertex:
     v.setLastAndNext(listData)
 for ve in listData:
@@ -72,6 +71,3 @@ for ve in listData:
 
 print(result)
 print ("######################################")
-for e in listData:
-    if e[2]=="a":
-        print(e)
