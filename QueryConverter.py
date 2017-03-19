@@ -151,6 +151,6 @@ def QueryToWords(query1):
     # print(l4)
     # print(l5)
     # print(l6)
+    return l4
 
-
-QueryToWords("a[2,3].h.(b+c+d.(e+f+g+t)+u).a[2,3].(b+c+d+e.(f+g))).y.(i+9)");
+# QueryToWords("a[2,3].h.(b+c+d.(e+f+g+t)+u).a[2,3].(b+c+d+e.(f+g))).y.(i+9)")
