@@ -71,7 +71,9 @@ def GetVertextParh(listdata,query):
     for v in listVertex:
         v.setLastAndNext(listData)
     for ve in listData:
+        print(ve)
         if ve[2]==q[0]:
+
             for v in listVertex:
                 if v.name==ve[0]:
                     v.chooseBF(ve[0],q)
